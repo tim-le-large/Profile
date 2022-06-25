@@ -1,0 +1,75 @@
+#duckduckgo {
+  text-align: center;
+  margin-bottom: 10%;
+  width: 200%;
+  input {
+    width: 100%;
+    border-color: black;
+    border-radius: 3rem;
+    border-width: 0.3rem;
+
+    text-align: center;
+    border-style: solid;
+    font-size: calc(1rem + 0.5vw);
+    padding: 0.3%;
+  }
+  @media (max-width: 800px) {
+    input {
+      display: none;
+    }
+  }
+}
+
+#network {
+  border-radius: 5rem;
+  background-color: rgb(255, 255, 255, 0.6);
+
+  padding: 1rem;
+  width: 100%;
+  height: 100%;
+  svg {
+    background-color: #000;
+    border-radius: 3rem;
+  }
+}
+
+h1 {
+  margin-top: 5%;
+}
+
+#expand {
+  font-size: 600%;
+}
+#collapse {
+  font-size: 600%;
+}
+.card > * {
+  // word-wrap: normal;
+
+  white-space: nowrap;
+  // overflow-wrap: normal;
+}
+.card {
+  // max-height: 10px;
+  overflow: auto;
+  width: fit-content;
+}
+
+.collapsing {
+  &.collapse-horizontal {
+    width: 0;
+    height: auto;
+    transition: width 0.6s ease-out;
+  }
+}
+#toggler[aria-expanded="true"] #expand {
+  display: none;
+}
+#toggler[aria-expanded="false"] #collapse {
+  display: none;
+}
+#toggler {
+  background-color: rgb(255, 255, 255, 0.6);
+  height: 350px;
+  border-radius: 3rem;
+}

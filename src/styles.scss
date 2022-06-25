@@ -1,1 +1,44 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css?family=ABeeZee");
+@import url(~fullpage.js/dist/fullpage.min.css);
+
+.divider {
+  margin: 1.25rem 0 1.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.divider-line {
+  width: 120%;
+  height: 0.4rem;
+  background-color: white;
+  border-radius: 1rem;
+  border-color: white;
+  margin-top: 3%;
+  margin-left: -10%;
+}
+
+.divider .divider-icon {
+  color: white;
+  font-size: 2rem;
+  margin: 0 1rem;
+}
+app-root {
+  font-family: ABeeZee;
+
+  color: white;
+  #fullpage {
+    h1 {
+      margin-bottom: 3%;
+      // text-decoration: underline;
+    }
+  }
+  h2 {
+    color: white;
+  }
+}
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+  background-color: white;
+}

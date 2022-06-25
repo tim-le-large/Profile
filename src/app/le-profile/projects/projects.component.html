@@ -1,0 +1,29 @@
+<section class="d-flex w-100 h-100">
+    <div class="d-flex my-auto mx-auto flex-column align-items-center">
+        <h1>
+            Projects
+            <div class="divider-line"></div>
+        </h1>
+        <div class="d-flex justify-content-center flex-wrap ">
+            <app-cardgrid [cards]="cards">
+
+            </app-cardgrid>
+
+            <div id="grid-item" class="m-4 p-5 bg-dark ">
+                <div class="d-flex align-items-center justify-content-center" id="grid-container">
+                    <a routerLink="/le-dashboard">
+                        <fa-icon id="grid-icon" [icon]="faDocker"></fa-icon>
+                        <div id="grid-title"
+                            class="bg-white d-flex flex-column text-center  align-items-center justify-content-center h-100 w-100  p-2">
+                            <h4><u>Le dashboard</u></h4>
+                            <p>
+                                Overview of my docker-hosted services like cloud, git and password manager.
+                            </p>
+                        </div>
+
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
