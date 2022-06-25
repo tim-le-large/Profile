@@ -1,13 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=ABeeZee");
 @import url(~fullpage.js/dist/fullpage.min.css);
 
-.divider {
-  margin: 1.25rem 0 1.5rem;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 .divider-line {
   width: 120%;
   height: 0.4rem;
@@ -18,21 +12,19 @@
   margin-left: -10%;
 }
 
-.divider .divider-icon {
-  color: white;
-  font-size: 2rem;
-  margin: 0 1rem;
-}
+
 app-root {
-  font-family: ABeeZee;
+  font-family: ABeeZee, serif;
 
   color: white;
+
   #fullpage {
     h1 {
       margin-bottom: 3%;
       // text-decoration: underline;
     }
   }
+
   h2 {
     color: white;
   }
@@ -42,3 +34,88 @@ app-root {
 .fp-slidesNav ul li a span {
   background-color: white;
 }
+
+#grid-item {
+  cursor: pointer;
+  position: relative;
+
+  border-radius: 0.5rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  #grid-container {
+    width: 15vw;
+    aspect-ratio: 2/1;
+  }
+
+  #grid-icon {
+    font-size: 300%;
+    color: white;
+  }
+
+  #grid-title {
+    border-radius: 0.5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+    color: black;
+
+    font-size: 1rem;
+
+    &:hover {
+      border: 3px black solid;
+      opacity: 1;
+    }
+  }
+}
+
+#navigation {
+  padding-block: 1%;
+  padding-inline: 2%;
+
+  #nn {
+    height: auto;
+    width: 10%;
+    margin-right: 3%;
+  }
+
+  #title {
+    h2 {
+      font-weight: bold;
+      padding-top: 1%;
+    }
+
+    font-size: 1.5rem;
+    padding-right: 2%;
+  }
+
+  #section-list {
+    li {
+      border-radius: 0;
+      background-color: transparent;
+
+      a {
+        margin-inline: 20px;
+        color: white;
+
+        h3 {
+          font-weight: bold;
+        }
+      }
+
+      &.active {
+        // background-color: white;
+        border-bottom: solid 3px white;
+
+        a {
+          color: white;
+        }
+      }
+    }
+  }
+}
+

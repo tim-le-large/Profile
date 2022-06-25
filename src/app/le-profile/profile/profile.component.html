@@ -1,35 +1,31 @@
 <section class="d-flex w-100 h-100 ">
-    <div class="d-flex align-items-center justify-content-center w-100 h-100">
-        <div class="d-flex   align-items-center">
+  <div class="d-flex align-items-center justify-content-center w-100 h-100">
+    <div class="d-flex   align-items-center">
 
 
-            <div class=" mb-2  color-black w-100 h-100 " id="network">
-
-            </div>
+      <app-nn></app-nn>
 
 
+      <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light  m-3" data-bs-target="#collapseExample"
+              data-bs-toggle="collapse" id="toggler" type="button">
+        <fa-icon [icon]="faAngleRight" id="expand"></fa-icon>
+        <fa-icon [icon]="faAngleLeft" id="collapse"></fa-icon>
+      </button>
+    </div>
+    <div class="collapse collapse-horizontal" id="collapseExample">
 
+      <div class="card card-body bg-dark p-5 text-center">
+        <h1> About me
+          <div class="divider-line"></div>
+        </h1>
 
-            <button id="toggler" class="btn btn-light  m-3" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                <fa-icon id="expand" [icon]="faAngleRight"></fa-icon>
-                <fa-icon id="collapse" [icon]="faAngleLeft"></fa-icon>
-            </button>
-        </div>
-        <div class="collapse collapse-horizontal" id="collapseExample">
+        <p>...</p>
 
-            <div class="card card-body bg-dark p-5 text-center">
-                <h1> About me
-                    <div class="divider-line"></div>
-                </h1>
-
-                <p>...</p>
-
-            </div>
-
-
-        </div>
+      </div>
 
 
     </div>
+
+
+  </div>
 </section>

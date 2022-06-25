@@ -1,9 +1,7 @@
-import { Component, OnInit, } from '@angular/core';
-import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import { Card } from '../../le-dashboard/cardgrid/card';
-
-
+import {Component, OnInit,} from '@angular/core';
+import {faGithub, faLinkedin} from '@fortawesome/free-brands-svg-icons';
+import {faEnvelope} from '@fortawesome/free-solid-svg-icons';
+import {Card} from '../../le-dashboard/cardgrid/card';
 
 
 @Component({
@@ -15,7 +13,7 @@ export class ContactComponent implements OnInit {
 
   faLinkedin = faLinkedin
   faGithub = faGithub
-  faEnvelope = faEnvelope
+
 
   cards: Card[] = [
     new Card(faEnvelope, "contact@lelar.ge", "mailto:contact@lelar.ge", ""),

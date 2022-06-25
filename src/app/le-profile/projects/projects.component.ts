@@ -1,8 +1,7 @@
-import { Component, OnInit } from '@angular/core';
-import { faDocker } from '@fortawesome/free-brands-svg-icons';
-import { faGamepad, faMinus } from '@fortawesome/free-solid-svg-icons';
-import { Card } from 'src/app/le-dashboard/cardgrid/card';
-
+import {Component, OnInit} from '@angular/core';
+import {faDocker} from '@fortawesome/free-brands-svg-icons';
+import {faGamepad, faMinus} from '@fortawesome/free-solid-svg-icons';
+import {Card} from 'src/app/le-dashboard/cardgrid/card';
 
 
 @Component({
@@ -11,8 +10,8 @@ import { Card } from 'src/app/le-dashboard/cardgrid/card';
   styleUrls: ['./projects.component.scss']
 })
 export class ProjectsComponent implements OnInit {
-  faGamepad = faGamepad
-  faMinus = faMinus
+
+
   faDocker = faDocker
   cards: Card[] = [
     new Card(faGamepad, "Night-Express", "https://night-express.lelar.ge", '"Escape-Room-Game" developed with Unity-3D.'),
@@ -21,7 +20,8 @@ export class ProjectsComponent implements OnInit {
 
   ]
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
   }
