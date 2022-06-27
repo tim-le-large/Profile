@@ -11,17 +11,19 @@ h1 {
   font-size: 600%;
 }
 
-.card > * {
+
+.card > p {
   // word-wrap: normal;
 
-  white-space: nowrap;
+  white-space: break-spaces;
   // overflow-wrap: normal;
 }
 
 .card {
-  // max-height: 10px;
-  overflow: auto;
+  max-width: 50vw;
+  overflow: hidden;
   width: fit-content;
+  border-radius: 3rem;
 }
 
 

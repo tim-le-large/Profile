@@ -19,5 +19,8 @@ RUN npm run build
 #Download NGINX Image
 FROM nginx:1.21.6-alpine
 
+# Add custom config
+COPY ./nginx/default.conf /etc/nginx/conf.d/
+
 #Copy built angular files to NGINX HTML folder
 COPY --from=build /usr/src/app/dist/le_page/ /usr/share/nginx/html

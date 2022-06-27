@@ -5,7 +5,7 @@ import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {LeDashboardModule} from './le-dashboard/le-dashboard.module';
 import {LeProfileModule} from './le-profile/le-profile.module';
-import {LeStartpageModule} from './le-startpage/le-startpage.module';
+import {LeHomeModule} from './le-home/le-home.module';
 
 
 @NgModule({
@@ -19,7 +19,7 @@ import {LeStartpageModule} from './le-startpage/le-startpage.module';
     AppRoutingModule,
     LeProfileModule,
     LeDashboardModule,
-    LeStartpageModule
+    LeHomeModule
   ],
 
   providers: [],

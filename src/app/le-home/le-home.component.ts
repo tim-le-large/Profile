@@ -1,11 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-le-startpage',
-  templateUrl: './le-startpage.component.html',
-  styleUrls: ['./le-startpage.component.scss']
+  templateUrl: './le-home.component.html',
+  styleUrls: ['./le-home.component.scss']
 })
-export class LeStartpageComponent implements OnInit {
+export class LeHomeComponent implements OnInit {
 
   config;
   fullpage_api: any;
@@ -14,7 +14,7 @@ export class LeStartpageComponent implements OnInit {
 
     this.config = {
       licenseKey: 'gplv3-license',
-      anchors: ['startpage',],
+      anchors: ['home',],
       menu: '#navigation',
 
     };
