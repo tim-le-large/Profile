@@ -6,7 +6,7 @@ import {Component, OnInit} from '@angular/core';
   styleUrls: ['./nn.component.scss']
 })
 export class NnComponent implements OnInit {
-  
+
 
   input = [[120, 60], [200, 30], [275, 65], [260, 140], [240, 180], [220, 150], [130, 140], [100, 100], [160, 110], [180, 70], [230, 110]];
   durationTime = 3;
@@ -22,9 +22,7 @@ export class NnComponent implements OnInit {
 
     const svg = document.createElementNS(`http://www.w3.org/2000/svg`, `svg`);
     svg.setAttribute(`version`, `1.1`);
-    svg.setAttribute(`width`, `400`);
-    svg.setAttribute(`height`, `400`);
-    // svg.setAttribute(`viewBox`, `0 0 50% 10%`);
+    svg.setAttribute(`viewBox`, `0 0 400 400`);
     let image = document.createElementNS(`http://www.w3.org/2000/svg`, `image`);
     image.setAttribute("href", "./assets/head.png")
     image.setAttribute("height", "400")

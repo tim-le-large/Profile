@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-le-profile',
@@ -10,6 +10,7 @@ export class LeProfileComponent implements OnInit {
 
   config;
   fullpage_api: any;
+  sections = ["profile", "projects", "contact"]
 
   constructor() {
 

@@ -6,12 +6,12 @@ import {AppComponent} from './app.component';
 import {LeDashboardModule} from './le-dashboard/le-dashboard.module';
 import {LeProfileModule} from './le-profile/le-profile.module';
 import {LeHomeModule} from './le-home/le-home.module';
+import {SharedModule} from "./shared/shared.module";
 
 
 @NgModule({
   declarations: [
     AppComponent,
-
   ],
 
   imports: [
@@ -19,7 +19,8 @@ import {LeHomeModule} from './le-home/le-home.module';
     AppRoutingModule,
     LeProfileModule,
     LeDashboardModule,
-    LeHomeModule
+    LeHomeModule,
+    SharedModule
   ],
 
   providers: [],

@@ -1,22 +1,7 @@
 
-h1 {
-  margin-top: 5%;
-}
-
-#expand {
-  font-size: 600%;
-}
-
-#collapse {
-  font-size: 600%;
-}
-
-
 .card > p {
-  // word-wrap: normal;
-
   white-space: break-spaces;
-  // overflow-wrap: normal;
+
 }
 
 .card {
@@ -37,6 +22,6 @@ h1 {
 
 #toggler {
   background-color: rgb(255, 255, 255, 0.6);
-  height: 350px;
+
   border-radius: 3rem;
 }

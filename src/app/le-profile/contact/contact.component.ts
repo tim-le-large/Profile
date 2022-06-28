@@ -1,7 +1,7 @@
 import {Component, OnInit,} from '@angular/core';
 import {faGithub, faLinkedin} from '@fortawesome/free-brands-svg-icons';
 import {faEnvelope} from '@fortawesome/free-solid-svg-icons';
-import {Card} from '../../le-dashboard/cardgrid/card';
+import {Card} from '../../shared/cardgrid/card';
 
 
 @Component({

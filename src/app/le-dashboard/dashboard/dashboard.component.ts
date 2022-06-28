@@ -3,7 +3,7 @@ import {Component, OnInit} from '@angular/core';
 
 import {faCloud, faKey} from '@fortawesome/free-solid-svg-icons';
 import {faGitAlt} from '@fortawesome/free-brands-svg-icons';
-import {Card} from 'src/app/le-dashboard/cardgrid/card';
+import {Card} from 'src/app/shared/cardgrid/card';
 
 
 @Component({
@@ -19,9 +19,9 @@ export class DashboardComponent implements OnInit {
 
 
   cards: Card[] = [
-    new Card(faCloud, "le_nextcloud", "https://cloud.lelar.ge", ""),
-    new Card(faGitAlt, "le_git", "https://git.lelar.ge", ""),
-    new Card(faKey, "le_bitwarden", "https://bitwarden.lelar.ge", ""),
+    new Card(faCloud, "le nextcloud", "https://cloud.lelar.ge", ""),
+    new Card(faGitAlt, "le git", "https://git.lelar.ge", ""),
+    new Card(faKey, "le bitwarden", "https://bitwarden.lelar.ge", ""),
   ]
 
 

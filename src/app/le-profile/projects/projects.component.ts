@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {faDocker} from '@fortawesome/free-brands-svg-icons';
 import {faGamepad, faMinus} from '@fortawesome/free-solid-svg-icons';
-import {Card} from 'src/app/le-dashboard/cardgrid/card';
+import {Card} from 'src/app/shared/cardgrid/card';
 
 
 @Component({
@@ -16,6 +16,7 @@ export class ProjectsComponent implements OnInit {
   cards: Card[] = [
     new Card(faGamepad, "Night-Express", "https://night-express.lelar.ge", '"Escape-Room-Game" developed with Unity-3D.'),
     new Card(faMinus, "Pong", "#", 'Play against an AI trained with reinforcement-learning (Q-learning).'),
+    new Card(faDocker, "le dashboard", "le-dashboard", ' Overview of my docker-hosted services like cloud, git and password manager.'),
 
 
   ]

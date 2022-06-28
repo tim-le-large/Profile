@@ -6,22 +6,18 @@ import {LeDashboardComponent} from './le-dashboard.component';
 import {DashboardComponent} from './dashboard/dashboard.component';
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 import {AngularFullpageModule} from '@fullpage/angular-fullpage';
-import {NavigationComponent} from './navigation/navigation.component';
-import {CardgridComponent} from "./cardgrid/cardgrid.component";
+import {SharedModule} from "../shared/shared.module";
 
 
 @NgModule({
   declarations: [
     LeDashboardComponent,
     DashboardComponent,
-    NavigationComponent,
-    CardgridComponent
   ],
-  exports: [CardgridComponent],
   imports: [
     CommonModule,
     LeDashboardRoutingModule,
-    FontAwesomeModule, AngularFullpageModule
+    FontAwesomeModule, AngularFullpageModule, SharedModule
   ]
 })
 export class LeDashboardModule {

@@ -1,10 +1,17 @@
 #fullpage {
-  div:nth-of-type(1) {
+  div {
     background-color: #1a951a;
+    //background-image: url("./../../assets/bg.jpg");
+    //background-repeat: no-repeat;
+    //background-size: cover;
+    //filter: blur(3px);
+    //background-image: radial-gradient(blue, #1a951a);
   }
+
   div:nth-of-type(2) {
     background-color: #f98d3f;
   }
+
   div:nth-of-type(3) {
     background-color: #1a91c4;
   }

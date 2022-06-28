@@ -3,7 +3,7 @@ import {faAngleLeft, faAngleRight} from '@fortawesome/free-solid-svg-icons';
 
 
 @Component({
-  selector: 'le-profile-profile',
+  selector: 'app-profile',
   templateUrl: './profile.component.html',
   styleUrls: ['./profile.component.scss']
 })
