@@ -1,0 +1,35 @@
+#card {
+  height: 50%;
+  max-width: 90%;
+  aspect-ratio: 1/1;
+  text-align: center;
+
+  app-nn {
+    border-top-left-radius: 3rem;
+    border-top-right-radius: 3rem;
+  }
+
+  h1 {
+    width: 100%;
+    border-bottom-left-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+  }
+
+
+}
+
+
+.duckduckgo-input {
+  width: 50vw;
+  border-color: black;
+  border-radius: 5vh;
+  border-width: 0.5vh;
+  background-color: white;
+  text-align: center;
+  color: black;
+  border-style: solid;
+  padding: 0.5vh;
+  margin-top: 5%;
+}
+
+
