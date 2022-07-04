@@ -1,47 +1,71 @@
-#grid-item {
-  cursor: pointer;
-  position: relative;
+#container {
+  height: 100%;
+  width: 100%;
 
-  border-radius: 0.5rem;
+  #grid-item {
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
-  #grid-container {
-    width: 15vw;
-    aspect-ratio: 2/1;
-  }
+    #grid-icon {
+      font-size: 300%;
+      color: white;
+    }
 
-  #grid-icon {
-    font-size: 300%;
-    color: white;
-  }
 
-  #grid-title {
-    border-radius: 0.5rem;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: opacity 0.3s ease-in-out;
-    opacity: 0;
-    color: black;
+    .card-underline {
+      width: 100%;
+      height: 0.2rem;
+      background-color: black;
+      border-radius: 1rem;
+      border-color: white;
 
-    font-size: 1rem;
 
-    &:hover {
+    }
+
+    #grid-title {
+      border-radius: 0.5rem;
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      color: black;
+      transition: opacity 0.3s ease-in-out;
+
+
+    }
+
+    #grid-title:hover {
       border: 3px black solid;
+      transition: opacity 0.3s ease-in-out;
       opacity: 1;
     }
   }
+}
 
-  .card-underline {
-    width: 100%;
-    height: 0.2rem;
-    background-color: black;
-    border-radius: 1rem;
-    border-color: white;
-
-
+@media screen and (min-width: 800px) {
+  #grid-item {
+    cursor: pointer;
+    position: relative;
+    border-radius: 0.5rem;
+    width: 50vh;
+    height: 25vh;
   }
+  #grid-title {
+    opacity: 0;
+  }
+
+}
+
+@media screen and (max-width: 800px) {
+  #grid-item {
+    cursor: pointer;
+    position: relative;
+    border-radius: 0.5rem;
+    width: 40vh;
+    height: 10vh;
+  }
+  #grid-title {
+    opacity: 1;
+    border: 3px black solid;
+  }
+
 }

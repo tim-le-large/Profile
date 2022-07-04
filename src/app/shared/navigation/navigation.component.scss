@@ -1,27 +1,30 @@
 #navigation {
   padding-block: 1%;
   padding-inline: 2%;
+  min-height: 15%;
+
 
   #nn {
-    height: auto;
     width: 10%;
+    height: auto;
     margin-right: 3%;
   }
 
   #title {
     h2 {
       font-weight: bold;
-      padding-top: 1%;
+
     }
 
-    font-size: 1.5rem;
     padding-right: 2%;
   }
 
   #section-list {
+
     li {
       border-radius: 0;
       background-color: transparent;
+
 
       a {
         margin-inline: 20px;
@@ -33,8 +36,7 @@
       }
 
       &.active {
-        // background-color: white;
-        border-bottom: solid 3px white;
+        border-bottom: solid 5px white;
 
         a {
           color: white;

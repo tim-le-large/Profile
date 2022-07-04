@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-le-profile',
@@ -11,12 +11,13 @@ export class LeProfileComponent implements OnInit {
   config;
   fullpage_api: any;
   sections = ["profile", "projects", "contact"]
+  @Input() showPrivateSearch: boolean = false;
 
   constructor() {
 
     this.config = {
       licenseKey: 'gplv3-license',
-      anchors: ['profile', 'projects', 'contact'],
+      anchors: ['home', 'profile', 'projects', 'contact'],
       menu: '#navigation',
       navigation: true,
     };

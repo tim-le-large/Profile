@@ -9,12 +9,18 @@ import {ProfileComponent} from './profile/profile.component';
 import {ProjectsComponent} from './projects/projects.component';
 import {LeProfileRoutingModule} from './le-profile-routing.module';
 import {SharedModule} from "../shared/shared.module";
+import {NnComponent} from "./nn/nn.component";
+import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
   declarations: [
     LeProfileComponent,
-    ProfileComponent, ProjectsComponent, ContactComponent,
+    ProfileComponent, ProjectsComponent, ContactComponent, NnComponent, HomeComponent
+  ],
+  exports: [
+    ProfileComponent,
+    LeProfileComponent
   ],
 
   imports: [

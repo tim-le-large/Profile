@@ -1,28 +1,33 @@
-<nav class="navbar  navbar-expand-lg fixed-top bg-dark px-3" id="navigation">
-  <div class="container-fluid d-flex justify-content-between">
+<nav class="navbar  navbar-expand-lg sticky-top bg-dark px-6" id="navigation">
+  <div class="container-fluid d-flex justify-content-center align-items-center">
 
-
-    <h2 class="text-white">
-      <img alt="nn" id="nn" src="../../../assets/nn.png">
-
-      Tim Le Large
-    </h2>
-    <button aria-controls="sections" aria-expanded="false" aria-label="Toggle navigation"
-            class=" navbar-toggler btn  "
-            data-bs-target="#sections" data-bs-toggle="collapse" id="nav-toggler" type="button">
-
-      <h2>
-        <fa-icon [icon]="faBars" class="navbar-toggler-icon text-white"></fa-icon>
+    <div class="d-flex ">
+      <h2 class="text-white">
+        <img alt="nn" id="nn" src="../../../assets/nn.png">
+        Tim Le Large
       </h2>
-    </button>
+
+      <button aria-controls="sections" aria-expanded="false" aria-label="Toggle navigation"
+              class="navbar-toggler btn"
+              data-bs-target="#sections" data-bs-toggle="collapse" id="nav-toggler" type="button">
+
+        <h2>
+          <fa-icon [icon]="faBars" class="navbar-toggler-icon text-white bg-opacity-100"></fa-icon>
+        </h2>
+      </button>
+    </div>
 
 
     <div class="collapse navbar-collapse  flex-d justify-content-end " id="sections">
 
 
-      <ul class="navbar-nav  mb-2 mb-lg-0 " id="section-list">
+      <ul class="navbar-nav " id="section-list">
 
-
+        <li class="nav-item btn" data-menuanchor="home">
+          <a class="nav-link text-white" href="/#home">
+            <h3>Home</h3>
+          </a>
+        </li>
         <li class="nav-item btn" data-menuanchor="profile">
           <a class="nav-link text-white" href="/#profile">
             <h3>Profile</h3>

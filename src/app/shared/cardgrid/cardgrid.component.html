@@ -1,22 +1,20 @@
-<div class="d-flex justify-content-center flex-wrap ">
-  <div *ngFor="let card of cards" class="m-4 p-5 bg-dark " id="grid-item">
-    <div class="d-flex align-items-center justify-content-center" id="grid-container">
-      <a [attr.href]="card.link">
-        <fa-icon [icon]="card.icon" id="grid-icon"></fa-icon>
-        <div class="bg-white d-flex flex-column text-center  align-items-center justify-content-center h-100 w-100  p-2"
-             id="grid-title">
+<div class="d-flex justify-content-center container-fluid flex-wrap" id="container">
+  <div *ngFor="let card of cards" class="m-3 bg-dark d-flex align-items-center justify-content-center"
+       id="grid-item">
 
-          <h4>{{card.name}}
-            <div class="card-underline mb-2"></div>
-          </h4>
+    <a [attr.href]="card.link">
+      <fa-icon [icon]="card.icon" id="grid-icon"></fa-icon>
+      <div class="bg-white d-flex flex-column text-center  align-items-center justify-content-center h-100 w-100  p-2"
+           id="grid-title">
 
-          <h5 class="px-5">
-            {{card.description}}
-          </h5>
-        </div>
+        <h4>{{card.name}}
+          <div class="card-underline mb-2"></div>
+        </h4>
 
-      </a>
-    </div>
+      </div>
+
+    </a>
+
   </div>
 </div>
 

@@ -1,5 +1,4 @@
 import {Component, OnInit} from '@angular/core';
-import {faAngleLeft, faAngleRight} from '@fortawesome/free-solid-svg-icons';
 
 
 @Component({
@@ -8,10 +7,6 @@ import {faAngleLeft, faAngleRight} from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./profile.component.scss']
 })
 export class ProfileComponent implements OnInit {
-
-  faAngleRight = faAngleRight
-  faAngleLeft = faAngleLeft
-
   ngOnInit(): void {
   }
 

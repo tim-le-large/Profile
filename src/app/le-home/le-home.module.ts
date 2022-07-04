@@ -1,21 +1,19 @@
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 
-import {LeHomeRoutingModule} from './le-home-routing.module';
 import {LeHomeComponent} from './le-home.component';
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
-import {HomeComponent} from './home/home.component';
 import {AngularFullpageModule} from '@fullpage/angular-fullpage';
-import {SharedModule} from "../shared/shared.module";
+import {LeProfileModule} from "../le-profile/le-profile.module";
 
 
 @NgModule({
   declarations: [
-    LeHomeComponent, HomeComponent
+    LeHomeComponent
   ],
   imports: [
     CommonModule,
-    LeHomeRoutingModule, FontAwesomeModule, AngularFullpageModule, SharedModule
+    FontAwesomeModule, AngularFullpageModule, LeProfileModule
   ]
 })
 export class LeHomeModule {

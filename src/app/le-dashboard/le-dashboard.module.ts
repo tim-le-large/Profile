@@ -3,7 +3,6 @@ import {CommonModule} from '@angular/common';
 
 import {LeDashboardRoutingModule} from './le-dashboard-routing.module';
 import {LeDashboardComponent} from './le-dashboard.component';
-import {DashboardComponent} from './dashboard/dashboard.component';
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 import {AngularFullpageModule} from '@fullpage/angular-fullpage';
 import {SharedModule} from "../shared/shared.module";
@@ -12,7 +11,6 @@ import {SharedModule} from "../shared/shared.module";
 @NgModule({
   declarations: [
     LeDashboardComponent,
-    DashboardComponent,
   ],
   imports: [
     CommonModule,
