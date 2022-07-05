@@ -1,11 +1,12 @@
 #navigation {
-  padding-block: 1%;
+
   padding-inline: 2%;
   min-height: 10%;
+  padding-block: 1%;
 
 
   #nn {
-    width: 10%;
+    width: 8%;
     height: auto;
     margin-right: 3%;
   }
@@ -24,11 +25,12 @@
     li {
       border-radius: 0;
       background-color: transparent;
-
+      padding-bottom: 0;
 
       a {
-        margin-inline: 20px;
+        margin-inline: 5px;
         color: white;
+        padding-bottom: 0;
 
         h3 {
           font-weight: bold;

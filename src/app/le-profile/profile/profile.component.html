@@ -2,19 +2,21 @@
 
 
   <div class="d-flex flex-column justify-content-center align-items-center" id="card">
-    <div id="inner">
+    <div class="d-flex flex-column justify-content-center align-items-center" id="inner">
 
-      <div class="bg-white" id="front">
+      <div class="bg-white d-flex justify-content-center align-items-center pb-5" id="front">
         <fa-icon [icon]="faRepeat" class="text-dark" id="repeat"></fa-icon>
         <div id="nn">
           <app-nn></app-nn>
         </div>
-        <h1 class="bg-dark p-2"> Tim Le Large </h1>
+        <h3 class="bg-dark p-2" id="name"> Tim Le Large </h3>
       </div>
-      <div class="bg-dark p-4 fs-1" id="back">
-        <h3> Profile
-        </h3>
-        <div class="divider-line mb-4"></div>
+      <div class="bg-dark p-3 fs-1 d-flex flex-column  align-items-center" id="back">
+        <div class="w-100" id="title"> Profile
+          <div class="divider-line mb-1"></div>
+
+        </div>
+
 
         <p>Hey, I'm Tim Le Large, 24 years old, and I'm currently finishing my bachelor in computer science at
           "Hochschule Mannheim".
@@ -34,8 +36,8 @@
   </div>
   <form action="https://www.duckduckgo.com/" id="duckduckgo" method="get">
 
-    <h3><input autocomplete="off" autofocus class="duckduckgo-input" name="q" placeholder="  private search..."
-               type="text"/></h3>
+    <p><input autocomplete="off" autofocus class="duckduckgo-input" name="q" placeholder="  private search..."
+              type="text"/></p>
   </form>
 
 
