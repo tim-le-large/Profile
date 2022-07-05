@@ -1,5 +1,5 @@
-import {Component, OnInit} from '@angular/core';
-
+import {Component, Input, OnInit} from '@angular/core';
+import {faRepeat} from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-profile',
@@ -7,8 +7,16 @@ import {Component, OnInit} from '@angular/core';
   styleUrls: ['./profile.component.scss']
 })
 export class ProfileComponent implements OnInit {
-  ngOnInit(): void {
+
+  @Input() showPrivateSearch!: boolean;
+  faRepeat = faRepeat;
+
+  constructor() {
   }
 
+  ngOnInit(): void {
+    if (!this.showPrivateSearch)
+      document.getElementById("duckduckgo")!.style.display = "None";
+  }
 
 }

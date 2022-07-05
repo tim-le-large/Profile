@@ -10,13 +10,12 @@ import {ProjectsComponent} from './projects/projects.component';
 import {LeProfileRoutingModule} from './le-profile-routing.module';
 import {SharedModule} from "../shared/shared.module";
 import {NnComponent} from "./nn/nn.component";
-import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
   declarations: [
     LeProfileComponent,
-    ProfileComponent, ProjectsComponent, ContactComponent, NnComponent, HomeComponent
+    ProfileComponent, ProjectsComponent, ContactComponent, NnComponent, ProfileComponent
   ],
   exports: [
     ProfileComponent,

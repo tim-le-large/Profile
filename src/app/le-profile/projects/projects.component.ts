@@ -15,8 +15,8 @@ export class ProjectsComponent implements OnInit {
   faDocker = faDocker
   cards: Card[] = [
     new Card(faGamepad, "Night-Express", "https://night-express.lelar.ge", '"Escape-Room-Game" developed with Unity-3D.'),
-    new Card(faMinus, "Pong", "https://github.com/le-tim/le_pong.git", 'Play against an AI trained with reinforcement-learning (Q-learning).'),
-    new Card(faDocker, "le dashboard", "le-dashboard", ' Overview of my docker-hosted services like cloud, git and password manager.'),
+    new Card(faMinus, "Le Pong", "https://github.com/le-tim/le_pong.git", 'Play against an AI trained with reinforcement-learning (Q-learning).'),
+    new Card(faDocker, "Le Dashboard", "le-dashboard", ' Overview of my docker-hosted services like cloud, git and password manager.'),
 
 
   ]

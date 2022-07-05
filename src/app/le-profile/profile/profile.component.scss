@@ -1,27 +1,78 @@
-#aboutme {
-  border-radius: 3rem;
+#card {
+  height: auto;
+  width: 600px;
+  max-width: 90vw;
+  perspective: 1000px;
+  text-align: center;
 
-
-  img {
-    width: 20vw;
+  #nn {
+    padding-inline: 15%;
   }
 
-  width: fit-content;
-  height: fit-content;
+  h1 {
+    width: 100%;
+    border-bottom-left-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+  }
+
+  #inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+
+  #repeat {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 300%;
+    padding-top: 4%;
+    padding-right: 6%;
+
+  }
+
+
+  #front, #back {
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+
+  #front {
+    border-radius: 3rem;
+  }
+
+  #back {
+    transform: rotateY(180deg);
+    border-radius: 3rem;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  &:hover {
+    #inner {
+      transform: rotateY(180deg);
+    }
+  }
 
 }
 
-
-@media screen and (max-width: 800px) {
-  #aboutme {
-    padding: 5%;
-    margin: 5%;
-  }
+.duckduckgo-input {
+  width: 50vw;
+  border-color: black;
+  border-radius: 5vh;
+  border-width: 0.5vh;
+  background-color: white;
+  text-align: center;
+  color: black;
+  border-style: solid;
+  padding: 0.5vh;
+  margin-top: 5%;
 }
 
-@media screen and (min-width: 800px) {
-  #aboutme {
-    padding: 5%;
-    margin: 5%;
-  }
-}
+
+
+

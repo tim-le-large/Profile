@@ -1,32 +1,45 @@
-<section class="d-flex justify-content-center align-items-center">
-
-  <div class="d-flex flex-column justify-content-center align-items-center bg-dark text-center" id="aboutme">
+<section class="d-flex flex-column justify-content-center align-items-center">
 
 
-    <!--    <div class="">-->
-    <!--      <img alt="" class="p-4" src="./assets/head.png">-->
-    <!--    </div>-->
+  <div class="d-flex flex-column justify-content-center align-items-center" id="card">
+    <div id="inner">
 
+      <div class="bg-white" id="front">
+        <fa-icon [icon]="faRepeat" class="text-dark" id="repeat"></fa-icon>
+        <div id="nn">
+          <app-nn></app-nn>
+        </div>
+        <h1 class="bg-dark p-2"> Tim Le Large </h1>
+      </div>
+      <div class="bg-dark p-4 fs-1" id="back">
+        <h3> Profile
+        </h3>
+        <div class="divider-line mb-4"></div>
 
-    <h1> Profile
-    </h1>
-    <div class="divider-line mb-4"></div>
-
-    <p>Hey, I'm Tim Le Large, 24 years old, and I'm currently finishing my bachelor in computer science at
-      "Hochschule Mannheim".
-    </p>
-    <p>
-      While studying, I've become interested in the area of artificial intelligence, which I spend most of my time
-      with.
-      Besides this passion, I've also created multiple other projects, which you can find in the
-      following.
-    </p>
-    <p>
-      Take your time and have a look. For further questions, feel free to contact me.
-    </p>
-
+        <p>Hey, I'm Tim Le Large, 24 years old, and I'm currently finishing my bachelor in computer science at
+          "Hochschule Mannheim".
+        </p>
+        <p>
+          While studying, I've become interested in the area of artificial intelligence, which I spend most of my time
+          with.
+          Besides this passion, I've also created multiple other projects, which you can find in the
+          following.
+        </p>
+        <p>
+          Take your time and have a look. For further questions, feel free to contact me.
+        </p>
+      </div>
+    </div>
 
   </div>
+  <form action="https://www.duckduckgo.com/" id="duckduckgo" method="get">
+
+    <h3><input autocomplete="off" autofocus class="duckduckgo-input" name="q" placeholder="  private search..."
+               type="text"/></h3>
+  </form>
 
 
 </section>
+
+
+

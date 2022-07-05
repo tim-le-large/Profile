@@ -5,6 +5,7 @@ import {LeHomeComponent} from './le-home.component';
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 import {AngularFullpageModule} from '@fullpage/angular-fullpage';
 import {LeProfileModule} from "../le-profile/le-profile.module";
+import {LeHomeRoutingModule} from "./le-home-routing.module";
 
 
 @NgModule({
@@ -12,7 +13,7 @@ import {LeProfileModule} from "../le-profile/le-profile.module";
     LeHomeComponent
   ],
   imports: [
-    CommonModule,
+    CommonModule, LeHomeRoutingModule,
     FontAwesomeModule, AngularFullpageModule, LeProfileModule
   ]
 })

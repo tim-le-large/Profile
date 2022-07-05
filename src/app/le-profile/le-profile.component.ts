@@ -10,14 +10,14 @@ export class LeProfileComponent implements OnInit {
 
   config;
   fullpage_api: any;
-  sections = ["profile", "projects", "contact"]
+
   @Input() showPrivateSearch: boolean = false;
 
   constructor() {
 
     this.config = {
       licenseKey: 'gplv3-license',
-      anchors: ['home', 'profile', 'projects', 'contact'],
+      anchors: ['profile', 'projects', 'contact'],
       menu: '#navigation',
       navigation: true,
     };
