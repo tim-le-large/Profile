@@ -10,6 +10,7 @@ export class ProfileComponent implements OnInit {
 
   @Input() showPrivateSearch!: boolean;
   faRepeat = faRepeat;
+  cardFlipped = false;
 
   constructor() {
   }
@@ -19,4 +20,17 @@ export class ProfileComponent implements OnInit {
       document.getElementById("duckduckgo")!.style.display = "None";
   }
 
+  flipCard() {
+    if ((('ontouchstart' in window) ||
+      (navigator.maxTouchPoints > 0)
+    )) {
+      if (this.cardFlipped) {
+        document.getElementById("inner")!.style.transform = "rotateY(0deg)"
+
+      } else {
+        document.getElementById("inner")!.style.transform = "rotateY(180deg)"
+      }
+      this.cardFlipped = !this.cardFlipped;
+    }
+  }
 }

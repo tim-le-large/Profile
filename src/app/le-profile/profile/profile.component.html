@@ -1,7 +1,8 @@
 <section class="d-flex flex-column justify-content-center align-items-center">
 
 
-  <div class="d-flex flex-column justify-content-center align-items-center" id="card">
+  <div (touchstart)="flipCard()" class="d-flex flex-column justify-content-center align-items-center"
+       id="card">
     <div class="d-flex flex-column justify-content-center align-items-center" id="inner">
 
       <div class="bg-white d-flex justify-content-center align-items-center pb-5" id="front">
@@ -9,10 +10,10 @@
         <div id="nn">
           <app-nn></app-nn>
         </div>
-        <h3 class="bg-dark p-2" id="name"> Tim Le Large </h3>
+        <h1 class="bg-dark p-2" id="name"> Tim Le Large </h1>
       </div>
-      <div class="bg-dark p-3 fs-1 d-flex flex-column  align-items-center" id="back">
-        <div class="w-100" id="title"> Profile
+      <div class="bg-dark p-3 fs-1 d-flex flex-column  justify-content-center align-items-center" id="back">
+        <div class="w-100 pb-3" id="title"> Profile
           <div class="divider-line mb-1"></div>
 
         </div>

@@ -1,13 +1,13 @@
 #fullpage {
-  div {
-    background-color: #1a951a;
+  div:nth-of-type(1) {
+    background-color: #1668BD;
   }
 
   div:nth-of-type(2) {
-    background-color: #f98d3f;
+    background-color: #FF8B00;
   }
 
   div:nth-of-type(3) {
-    background-color: #1a91c4;
+    background-color: #0E7C4A;
   }
 }

@@ -1,16 +1,18 @@
 <div class="d-flex justify-content-center container-fluid flex-wrap" id="container">
   <div *ngFor="let card of cards" class="m-3 bg-dark d-flex align-items-center justify-content-center"
        id="grid-item">
+    <fa-icon [icon]="card.icon" id="grid-icon"></fa-icon>
+    <a [attr.href]="card.link" class="d-flex flex-column align-items-center justify-content-center" id="hover">
 
-    <a [attr.href]="card.link">
-      <fa-icon [icon]="card.icon" id="grid-icon"></fa-icon>
-      <div class="bg-white d-flex flex-column text-center  align-items-center justify-content-center h-100 w-100  p-2"
+      <div class="bg-white p-2 d-flex flex-column align-items-center justify-content-center h-100 w-100 "
            id="grid-title">
 
-        <h4>{{card.name}}
+        <div id="title">{{card.name}}
           <div class="card-underline mb-2"></div>
-        </h4>
-
+        </div>
+        <p id="description">
+          {{card.description}}
+        </p>
       </div>
 
     </a>
