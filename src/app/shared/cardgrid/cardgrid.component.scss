@@ -1,5 +1,4 @@
 #container {
-  height: 100%;
 
   #grid-item {
     position: relative;
@@ -56,12 +55,12 @@
     width: 80%;
   }
   #grid-item {
-    margin: 2%;
+    margin: 2vh;
     cursor: pointer;
     position: relative;
     border-radius: 0.5rem;
-    width: 30vh;
-    height: 20vh;
+    width: 35vh;
+    height: 25vh;
   }
   #grid-title {
     opacity: 0;

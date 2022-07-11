@@ -17,7 +17,7 @@ export class ContactComponent implements OnInit {
 
   cards: Card[] = [
     new Card(faEnvelope, "contact@lelar.ge", "mailto:contact@lelar.ge", ""),
-    new Card(faGithub, "GitHub", "https://github.com/le-tim", ""),
+    new Card(faGithub, "GitHub", "https://github.com/tim-le-large", ""),
     new Card(faLinkedin, "LinkedIn", "https://www.linkedin.com/in/tim-le-large", ""),
   ]
 

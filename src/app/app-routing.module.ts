@@ -5,10 +5,10 @@ import {LeProfileComponent} from './le-profile/le-profile.component';
 import {LeHomeComponent} from './le-home/le-home.component';
 
 const routes: Routes = [
-  {path: 'le-dashboard', component: LeDashboardComponent},
-  {path: 'le-home', component: LeHomeComponent},
+  {path: 'dashboard', component: LeDashboardComponent},
+  {path: 'home', component: LeHomeComponent},
   {path: '', component: LeProfileComponent},
-  {path: 'le-profile', component: LeProfileComponent},]
+  {path: 'profile', component: LeProfileComponent},]
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
